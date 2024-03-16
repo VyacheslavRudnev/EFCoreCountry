@@ -33,6 +33,13 @@ public class CountryService
             SityType = "Regional center",
             Country = entity.Entity,
         });
+        _dataContext.City.Add(new City()
+        {
+            CityName = "Sumy",
+            CityPopulation = 800000,
+            SityType = "Regional center",
+            Country = entity.Entity,
+        });
         _dataContext.SaveChanges();
     }
 
